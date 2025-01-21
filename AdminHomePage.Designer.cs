@@ -47,6 +47,7 @@
             viewTransactionsButton = new Button();
             adminLogoutButton = new Button();
             nameUpdateButton = new Button();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)adminUserDataView).BeginInit();
             SuspendLayout();
             // 
@@ -171,7 +172,7 @@
             // accountDeleteButton
             // 
             accountDeleteButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            accountDeleteButton.Location = new Point(1027, 27);
+            accountDeleteButton.Location = new Point(1027, 36);
             accountDeleteButton.Name = "accountDeleteButton";
             accountDeleteButton.Size = new Size(134, 29);
             accountDeleteButton.TabIndex = 15;
@@ -183,7 +184,7 @@
             // 
             AdminComboBox1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AdminComboBox1.FormattingEnabled = true;
-            AdminComboBox1.Location = new Point(610, 27);
+            AdminComboBox1.Location = new Point(253, 37);
             AdminComboBox1.Name = "AdminComboBox1";
             AdminComboBox1.Size = new Size(305, 28);
             AdminComboBox1.TabIndex = 17;
@@ -231,12 +232,23 @@
             nameUpdateButton.UseVisualStyleBackColor = true;
             nameUpdateButton.Click += nameUpdateButton_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(71, 42);
+            label6.Name = "label6";
+            label6.Size = new Size(109, 20);
+            label6.TabIndex = 24;
+            label6.Text = "Select from list";
+            // 
             // AdminHomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
             ClientSize = new Size(1236, 500);
+            Controls.Add(label6);
             Controls.Add(nameUpdateButton);
             Controls.Add(adminLogoutButton);
             Controls.Add(viewTransactionsButton);
@@ -286,5 +298,6 @@
         private Button viewTransactionsButton;
         private Button adminLogoutButton;
         private Button nameUpdateButton;
+        private Label label6;
     }
 }
